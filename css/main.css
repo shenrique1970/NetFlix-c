@@ -1,0 +1,135 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+margin-left: 5px;
+margin-right: 50px;
+color: var(--vermelho);
+font-family: 'arial black';
+font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10PX;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*serie principal*/
+.serie-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/house.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.serie-principal .container {
+    width: 70%;
+}
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/mini2.jpg');
+    height: 400px;
+   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.documentario-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)90%), url('../img/universe.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+i {
+    padding: 5px;
+}
+.container {
+    margin-left: 30px ;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
