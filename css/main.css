@@ -42,7 +42,7 @@ header nav a:hover {
 }
 
 
-/*serie principal*/
+/* serie principal */
 .serie-principal {
     font-size: 18px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/house.jpeg');
@@ -59,37 +59,11 @@ header nav a:hover {
     width: 70%;
 }
 
-.filme-principal {
-    font-size: 18px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/mini2.jpg');
-    height: 400px;
-   
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.filme-principal .container {
-    width: 70%;
-}
-
-.documentario-principal {
-    font-size: 18px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)90%), url('../img/universe.jpeg');
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .serie-principal .descricao {
     width: 250px;
     margin-top: 10px;
     margin-bottom: 90px;
+    color: white;
 
 }
 
@@ -97,6 +71,7 @@ header nav a:hover {
     margin-top: 5%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 
 .botao {
@@ -133,3 +108,12 @@ i {
     margin-top: 5px;
 }
 
+h4 {
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    color: #AAA;
+}
+h4:hover {
+    color: #fff;
+}

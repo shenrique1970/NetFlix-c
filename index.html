@@ -7,19 +7,23 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <!--responsividade-->
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <!--owl css-->
     <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css">
+   
 </head>
 <body">
     <header>
       <div class="container">
         <h2 class="logo">NETFLIX</h2>
-        <nav>  
-          <a href="#">Inicio</a>
-          <a href="#series">Séries</a>
-          <a href="#filmes" >Filmes</a>
-          <a href="#documentarios" >Documentários</a>
+        <nav data-role="navbar"> 
+          <ul>
+            <a href="#">Inicio</a>
+            <a href="#series">Séries</a>
+            <a href="#filmes" >Filmes</a>
+            <a href="#documentarios" >Documentários</a>
+          </ul> 
         </nav>
         <form>
           <input type="search" placeholder="Busca" size="50%">
@@ -28,29 +32,38 @@
       </div>
     </header> 
     <main>
-      <div id="series" class="serie-principal">
-        <div class="container">
-          <h3 class="titulo">House of cards</h3>
-          <p class="descricao">
-              Um político inescrupuloso não mede esforços para 
-            conquistar o poder nos EUA neste drama vencedor 
-            do Emmy e do Globo de Ouro.
-            
-            Beau Willimon
-            
-            Criação</p>
-            <div class="botoes">
-              <button role="button" class="botao">
-                <i class="fas fa-play"></i>
-                ASSISTIR AGORA</button>
-              <button role="button" class="botao">
-                <i class="fas fa-info-circle"></i>
-                MAIS INFORMAÇÕES</button>
-            </div>
-        </div> 
-      </div>
+      
+        <div class="row serie-principal">
+          <div class="container">
+            <h3 class="titulo">House of cards</h3>
+            <p class="descricao">
+                Um político inescrupuloso não mede esforços para 
+              conquistar o poder nos EUA neste drama vencedor 
+              do Emmy e do Globo de Ouro.
+              
+              Beau Willimon
+              
+              Criação</p>
+              <div class="botoes">
+                <button role="button" type="button" class="botao">
+                  <i class="fas fa-play"></i>
+                  ASSISTIR AGORA</button>
+                <button role="button" type="button" class="botao">
+                  <i class="fas fa-info-circle"></i>
+                  MAIS INFORMAÇÕES</button>
+              </div>
+          </div> 
+        </div>
+        <div style="max-width: 800px; margin: 80px auto;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8QnMmpfKWvo" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+        </div>
+    
     </main>
-    <div class="carrosel-filmes">
+    <section id="series" class="carrosel-filmes">
+      <h4><a href="#">Series</a></h4>
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img class="box-filme" src="./img/mini1.jpg" alt="">
@@ -89,13 +102,97 @@
           <img class="box-filme" src="./img/falcao.jpeg" alt="">
         </div>
       </div>
-    </div>
-
+    </section>
+    <section id="filmes" class="carrosel-filmes">
+      <h4><a href="#">Filmes</a></h4>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="./img/mini1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini9.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini10.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/doctor.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/falcao.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="documentarios" class="carrosel-filmes">
+      <h4><a href="#">Documentarios</a></h4>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="./img/mini1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini9.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/mini10.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/doctor.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="./img/falcao.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+    
+  
     <script src="https://kit.fontawesome.com/dcc08c1836.js" crossorigin="anonymous"></script>
     <!--arquivos jquery-->
     <script type="text/javascript" src="./js/owl/jquery.min.js"></script>
     <script type="text/javascript" src="./js/owl/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./js/owl/setup.js"></script>
     <!--https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html-->
+    <script src="./dist/fluidify.js"></script>
 </body>
 </html>
