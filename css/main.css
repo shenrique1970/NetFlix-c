@@ -9,10 +9,13 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 header .container {
@@ -41,15 +44,25 @@ header nav a:hover {
     color: #fff;
 }
 
+.paragrafo {
+    width: 200px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* serie principal */
 .serie-principal {
     font-size: 18px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/house.jpeg');
-    height: 400px;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     
@@ -84,6 +97,7 @@ header nav a:hover {
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
+    margin: 8px;
 }
 
 .botao:hover {
@@ -94,6 +108,7 @@ header nav a:hover {
 i {
     padding: 5px;
 }
+
 .container {
     margin-left: 30px ;
 }
